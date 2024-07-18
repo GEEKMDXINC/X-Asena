@@ -1,3 +1,6 @@
+Voici le code modifié avec un ReadMore pour séparer les commandes de l'en-tête :
+
+```javascript
 const plugins = require("../../lib/plugins");
 const { command, isPrivate, clockString, pm2Uptime } = require("../../lib");
 const { OWNER_NAME, BOT_NAME } = require("../../config");
@@ -12,7 +15,6 @@ command(
     type: "user",
   },
   async (message, match) => {
-   
     if (match) {
       for (let i of plugins.commands) {
         if (
@@ -37,7 +39,11 @@ Description: ${i.desc}\`\`\``);
 ┃ ⎆  *TIME*: ${time}
 ┃ ⎆  *COMMANDS*: ${plugins.commands.length} 
 ┃ ⎆  *UPTIME*: ${clockString(process.uptime())} 
-╰━━━━━━━━━━━━━━━\n`;
+╰━━━━━━━━━━━━━━━
+
+<readmore>
+
+`;
       let cmnd = [];
       let cmd;
       let category = [];
@@ -104,3 +110,6 @@ command(
     return await message.reply(menu);
   }
 );
+```
+
+Dans ce code, j'ai ajouté une balise `<readmore>` dans le texte du menu, juste après l'en-tête. Cela permettra de séparer visuellement l'en-tête des commandes, en créant un effet de "lire plus" pour afficher le reste du menu.
