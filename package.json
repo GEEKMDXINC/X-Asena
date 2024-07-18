@@ -38,6 +38,11 @@
     "sqlite3": "^5.1.7",
     "stream-buffers": "^3.0.2",
     "x-asena": "^1.0.1"
+    "ytdl-core": "^4.10.0"
+    "youtubedl-core": "^4.11.7",
+    "yt-search": "^2.10.4",
+    "wa-sticker-formatter": "^4.4.4",
+    "sequelize": "^6.32.1",
   },
   "scripts": {
     "start": "pm2 start index.js --name x-asena && pm2 logs x-asena",
