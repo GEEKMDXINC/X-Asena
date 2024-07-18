@@ -49,9 +49,7 @@ Description: ${i.desc}\`\`\``);
 ┃ ⎆  *TIME*: ${time}
 ┃ ⎆  *COMMANDS*: ${plugins.commands.length} 
 ┃ ⎆  *UPTIME*: ${clockString(process.uptime())} 
-╰━━━━━━━━━━━━━━━
-
-<readmore>
+╰━━━━━━━━━━━━━━━ <readmore>
 
 `;
       let cmnd = [];
