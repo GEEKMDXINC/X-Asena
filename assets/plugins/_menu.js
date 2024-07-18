@@ -1,6 +1,9 @@
-Voici le code modifié avec un ReadMore pour séparer les commandes de l'en-tête :
+\** 
 
-```javascript
+je suis Mr le geek 
+
+**/
+
 const plugins = require("../../lib/plugins");
 const { command, isPrivate, clockString, pm2Uptime } = require("../../lib");
 const { OWNER_NAME, BOT_NAME } = require("../../config");
