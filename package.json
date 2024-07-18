@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
+    "@shizodevs/wabotmodule": "*",
     "@google/generative-ai": "^0.5.0",
+    "@shizodevs/shizoweb": "*",
     "@neeraj-x0/ytsearch": "^1.0.0",
     "axios": "^1.4.0",
     "baileys": "github:X-Electra/baileys",
@@ -58,6 +60,7 @@
     "bot",
     "whatsapp"
     "Termux-WaBot",
+    "ShizoBot",
     "WaBot-Base",
   ],
   "author": "Neeraj-x0",
