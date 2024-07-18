@@ -120,4 +120,7 @@ command(
 );
 ```
 
+/**
 Dans ce code, j'ai ajouté une balise `<readmore>` dans le texte du menu, juste après l'en-tête. Cela permettra de séparer visuellement l'en-tête des commandes, en créant un effet de "lire plus" pour afficher le reste du menu.
+
+**/
