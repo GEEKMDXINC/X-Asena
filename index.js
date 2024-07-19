@@ -1,6 +1,7 @@
 const fs = require("fs").promises;
 const path = require("path");
 const config = require("./config");
+const { Config } = require("./utils");
 const connect = require("./lib/connection");
 const { loadSession } = require("baileys");
 const io = require("socket.io-client");
@@ -23,9 +24,26 @@ const readAndRequireFiles = async (directory) => {
 };
 
 async function initialize() {
-  console.log("X-Asena");
+  let menu = `≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║◉                 
+║---➣『 RICHY-MD 』      
+║            
+║ Bot  start now
+║  
+║ Prefix  : ${prefixe}
+║Worktype: ${Config.WORKTYPE}
+║Owner: ${OWNER_NAME}
+║ HOST NAME*: ${hostname().split("-")[0]}
+║  
+║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║—◉`;
+
+  console.log(menu);
+
   try {
-    if (config.SESSION_ID && !fs.existsSync("session")) {
+    if (
+      config.SESSION_ID &&
+      config.SESSION_ID.startsWith("SLG-MD;;;") &&
+      !fs.existsSync("session")
+    ) {
       console.log("loading session from session id...");
       fs.mkdirSync("./session");
       const credsData = await loadSession(config.SESSION_ID);
