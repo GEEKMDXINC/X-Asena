@@ -32,7 +32,7 @@ async function initialize() {
 ║ Prefix  : ${prefixe}
 ║Worktype: ${Config.WORKTYPE}
 ║Owner: ${OWNER_NAME}
-║ HOST NAME*: ${hostname().split("-")[0]}
+║ HOST NAME : ${hostname().split("-")[0]}
 ║  
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║—◉`;
 
